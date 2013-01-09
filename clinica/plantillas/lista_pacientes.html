@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block titulo %} --------REPORTES-------------{%  endblock %}
+{% block encabezado %}
+	<h1> --- REPORTES-----</h1>
+{% endblock %}
+
+{% block contenido %}
+
+<h1>Lista de pacientes</h1>
+	{% for elemento in paciente %}
+	<ul>
+	  <li><strong>{{elemento.nombre}}</li>
+	</ul>
+	{% endfor %}
+
+
+{% endblock %}
